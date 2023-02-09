@@ -12,9 +12,7 @@ let data = ''
 const bot = new telegramApi(TOKEN, { polling: true })
 
 async function runCompletion(msg) {
-    // bot.onText(/\/start/, msg => {
-    //     bot.sendMessage(msg.chat.id, `hello ${msg.from.first_name}  \n \n Ask me something ! Its better in English ,but i can in Ucrainian also !`)
-    // })
+
     if (msg.text == "/start") {
         return await bot.sendMessage(msg.chat.id, `hello ${msg.from.first_name}  \n \n Ask me something ! Its better in English ,but i can in Ucrainian also ! \n Слава Україні !!!`)
     }
